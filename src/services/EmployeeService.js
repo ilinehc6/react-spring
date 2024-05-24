@@ -1,9 +1,6 @@
 import axios from "axios";
 import { REST_API_BASE_URL } from '../App'
 
-// to set this as an env variable
-//const REST_API_BASE_URL = "http://localhost:8080/api/employees";
-
 export const ListEmployees = () => {
     return axios.get(REST_API_BASE_URL);
 }
