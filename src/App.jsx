@@ -1,14 +1,14 @@
-
 import './App.css'
+import React from 'react'
 import EmployeeComponent from './components/EmployeeComponent'
 import FooterComponent from './components/FooterComponent'
 import HeaderComponent from './components/HeaderComponent'
 import ListEmployeeComponent from './components/ListEmployeeComponent'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 
+export const REST_API_BASE_URL = import.meta.env.VITE_REST_API_BASE_URL
 
 function App() {
-
   return (
     <>
     <BrowserRouter>
@@ -25,7 +25,6 @@ function App() {
       </Routes>
       <FooterComponent />
       </BrowserRouter>
-    
     </>
   )
 }
